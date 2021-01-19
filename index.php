@@ -1,12 +1,10 @@
 <?php
 $title = "PHP BADWORDS";
 $text = "Lorem ipsum dolor sit amet, BADWORD consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad BADWORD veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse BADWORD dolore eu fugiat nulla pariatur. Excepteur BADWORD sint occaecat cupidatat non proident, BADWORD in culpa qui BADWORD officia deserunt mollit anim id est laborum.";
-$badWord = "BADWORD";
-$_GET["BADWORD"];
+$badWord = $_GET["badWord"];
+$censured = "***"
 
 
-$name = "";
-$_GET["name"];
  ?>
 
 
@@ -34,8 +32,6 @@ $_GET["name"];
     </p>
     <h2><?php echo "Questa è la Badword:" . " " . $badWord ?> </h2>
     <h2>TESTO CENSURATO</h2>
-
-
-    <h1><?php echo $name ?> </h1>
+    <?php echo str_Replace($badWord, $censured , $text) ?>
   </body>
 </html>
